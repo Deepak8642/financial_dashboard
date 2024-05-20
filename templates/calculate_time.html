@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Time Required</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Calculate Time Required</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="salary">Enter Your Salary:</label>
+                <input type="number" class="form-control" id="salary" name="salary" required>
+            </div>
+            <div class="form-group">
+                <label for="targeted_item_cost">Targeted Item Cost:</label>
+                <input type="number" class="form-control" id="targeted_item_cost" name="targeted_item_cost" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate Time Required</button>
+        </form>
+    </div>
+</body>
+</html>
